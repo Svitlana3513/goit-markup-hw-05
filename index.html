@@ -436,12 +436,31 @@
             </li>
         </ul>
         </div>
+        <div class="footer-subscribe-form">
+           <p class="text-subscribe">Subscribe</p>
+           <form class="subscribe-form">
+             <label class="subscribe-form-label" for="subscribe-user-email">
+                       <input class="subscribe-form-input" 
+                       id="subscribe-user-email" 
+                       name="subscribe-user-email" 
+                       type="email"
+                       placeholder="E-mail" 
+                       required/>
+             </label>
+             <button class="subscribe-submit-btn" type="submit">Subscribe
+                    <svg class="subscribe-btn-icon" width="24" height="24" aria-label="btn-send">
+                    <use href="./images/icons.svg#icon-send">
+                    </use>
+                    </svg>
+             </button>
+          </form>
+        </div>        
     </div>  
     </footer>
 
     <!-------MODAL WINDOW----->
 
-    <div class="backdrop is-open">
+    <div class="backdrop">
         <div class="modal">
            <button class="modal-close-btn">
             <svg class="modal-close-btn-icon" width="8" height="8" aria-label="btn-close">
@@ -511,13 +530,19 @@
                 ></textarea>
             </div>
             <div class="contacts-form-checkbox-wrapper">
-                <input class="checkbox-form-input"
+                <input class="checkbox-form-input visually-hidden"
                     id="user-privacy-policy"
                     name="user-privacy-policy"
                     value="true"
                     type="checkbox"
                     required/>
-                <label class="checkbox-form-label" for="user-privacy-policy">I accept the terms and conditions of the <a href="">Privacy Policy</a> 
+                <label class="checkbox-form-label" for="user-privacy-policy">
+                    <span class="contacts-form-checkbox">
+                        <svg class="contacts-checkbox-icon" width="10" height="8" aria-label="icon-click">
+                            <use href="./images/icons.svg#icon-click"></use>
+                        </svg>
+                    </span>
+                    I accept the terms and conditions of the <a class="accent-color" href="">Privacy Policy</a> 
 
                 </label>
             </div>

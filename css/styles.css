@@ -531,7 +531,7 @@ padding: 100px 0;
 .flex-footer{
     display: flex;
     align-items: baseline;
-}
+    }
 
 .text-logo-footer{
     margin-right: 120px;
@@ -555,6 +555,87 @@ background-color: #31D0AA;
 .social-list-link{
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.text-subscribe{
+color:#FFF;
+font-size: 16px;
+font-weight: 500;
+line-height: 1.5;
+letter-spacing: 0.02em;
+margin-bottom: 16px;
+}
+
+.subscribe-form{
+    display: flex;
+    gap:24px;
+    
+}
+
+.footer-subscribe-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 24px;
+   }
+ 
+.subscribe-form-label{
+    display:flex;  
+    color: #8E8F99;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    margin-bottom: 4px;
+    }
+
+.subscribe-form-input{
+    width:264px;
+    height:40px;
+    border-radius: 4px;
+    border-color: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    background-color: transparent;
+    padding-left: 16px;
+    outline: 0px solid transparent;
+        
+}
+
+.subscribe-form-input::placeholder{
+    color:  #FFF;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 2.0;
+    letter-spacing: 0.04em;
+}
+
+.subscribe-submit-btn{
+    min-width: 165px;
+    height: 40px;
+    padding: 8px 24px 8px 24px;
+    border-radius: 4px;
+    background: #4D5AE5;
+    border: none;
+    color: #FFF;
+    margin: 0 auto;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe-btn-icon{
+    fill: #FFFFFF;
+}
+
+.subscribe-submit-btn:hover,
+.subscribe-submit-btn:focus {
+   background-color: #404BBF;
+}
+    
+
+
 /*========/FOOTER STYLES======*/
 
 /*========BACKDROP STYLES======*/
@@ -701,11 +782,78 @@ color: rgba(46, 47, 66, 0.40);
    border-color: #4D5AE5;
 }
 
+.contacts-form-checkbox-wrapper{
+    margin-bottom: 24px;
+}
 
+.checkbox-form-label{
+    color:#8E8F99;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+}
 
+.accent-color{
+    color:#4D5AE5 ;
+}
 
+.contacts-form-checkbox{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    border: 1px solid rgba(46, 47, 66, 0.40);
+    cursor: pointer;
+    margin-right: 8px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
+.checkbox-form-input:checked+
+.checkbox-form-label>
+.contacts-form-checkbox{
+    background-color: #404BBF;
+    border-color: #404BBF;
+}
 
+.contacts-checkbox-icon{
+    fill: #F4F4FD;
+    opacity: 0;
+}
+
+.checkbox-form-input:checked+
+.checkbox-form-label 
+.contacts-checkbox-icon{
+    opacity: 1;
+}
+
+.checkbox-form-input:focus+
+.checkbox-form-label>
+.contacts-form-checkbox{
+    outline: 1px solid #4D5AE5;
+}
+
+.contacts-submit-btn{
+    min-width: 169px;
+    padding: 16px 32px;
+    border-radius: 4px;
+    background:#4D5AE5;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    border: none;
+    color: #FFF;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts-submit-btn:hover,
+.contacts-submit-btn:focus{
+     background-color: #404BBF;
+}
 
 
 /*========/MODAL WINDOW STYLES======*/
