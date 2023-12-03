@@ -568,14 +568,15 @@ margin-bottom: 16px;
 .subscribe-form{
     display: flex;
     gap:24px;
+
     
 }
 
 .footer-subscribe-form{
     display: flex;
-    justify-content: center;
-    align-items: center;
     column-gap: 24px;
+    flex-direction: column;
+    margin-left: 80px;
    }
  
 .subscribe-form-label{
